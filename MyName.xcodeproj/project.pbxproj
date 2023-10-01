@@ -13,6 +13,7 @@
 		22D7F8682AC5F43900F57327 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D7F8662AC5F43900F57327 /* Main.storyboard */; };
 		22D7F86A2AC5F43F00F57327 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22D7F8692AC5F43F00F57327 /* Assets.xcassets */; };
 		22D7F86D2AC5F43F00F57327 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D7F86B2AC5F43F00F57327 /* LaunchScreen.storyboard */; };
+		22D7F8752AC9DFC300F57327 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D7F8742AC9DFC300F57327 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		22D7F8692AC5F43F00F57327 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22D7F86C2AC5F43F00F57327 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22D7F86E2AC5F43F00F57327 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22D7F8742AC9DFC300F57327 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				22D7F8602AC5F43900F57327 /* AppDelegate.swift */,
 				22D7F8622AC5F43900F57327 /* SceneDelegate.swift */,
 				22D7F8642AC5F43900F57327 /* ViewController.swift */,
+				22D7F8742AC9DFC300F57327 /* SecondViewController.swift */,
 				22D7F8662AC5F43900F57327 /* Main.storyboard */,
 				22D7F8692AC5F43F00F57327 /* Assets.xcassets */,
 				22D7F86B2AC5F43F00F57327 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D7F8752AC9DFC300F57327 /* SecondViewController.swift in Sources */,
 				22D7F8652AC5F43900F57327 /* ViewController.swift in Sources */,
 				22D7F8612AC5F43900F57327 /* AppDelegate.swift in Sources */,
 				22D7F8632AC5F43900F57327 /* SceneDelegate.swift in Sources */,

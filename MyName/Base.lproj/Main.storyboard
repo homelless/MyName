@@ -24,6 +24,15 @@
                                     <action selector="showMessage" destination="BYZ-38-t0r" eventType="touchUpInside" id="opi-jP-8bC"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbV-F0-B2H">
+                                <rect key="frame" x="129" y="487" width="156" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="&quot;Show Next Screen&quot;"/>
+                                <connections>
+                                    <segue destination="Kow-LZ-ttN" kind="show" id="IH9-fF-hmw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -37,10 +46,48 @@
             </objects>
             <point key="canvasLocation" x="-16" y="110"/>
         </scene>
+        <!--Second View Controller-->
+        <scene sceneID="kBV-gI-KlR">
+            <objects>
+                <viewController id="Kow-LZ-ttN" customClass="SecondViewController" customModule="MyName" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b4u-1p-eFy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxb-XK-6DO">
+                                <rect key="frame" x="160" y="405.5" width="94" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show Alert">
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="showAlert" destination="Kow-LZ-ttN" eventType="touchUpInside" id="Ww8-0W-6fT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Lds-WI-HhI"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="pxb-XK-6DO" firstAttribute="centerX" secondItem="b4u-1p-eFy" secondAttribute="centerX" id="YcH-Zs-wcq"/>
+                            <constraint firstItem="pxb-XK-6DO" firstAttribute="centerY" secondItem="b4u-1p-eFy" secondAttribute="centerY" id="yMO-Lf-kql"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="EXd-tg-1cB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uhs-Jq-gMx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="852" y="110"/>
+        </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
