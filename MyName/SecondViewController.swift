@@ -13,7 +13,13 @@ class SecondViewController: UIViewController {
             title: "Welcome",
             message: "This is myName App",
             preferredStyle: .alert)
-        // вывод всплывающего окна
+        // создаем кнопку ОК
+        let actionOk = UIAlertAction(title: "OK", style: .default, handler: nil)
+        // создаем кнопку Cancel
+        let actionCancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        // Добавляем обе кнопки в Alert Controller
+        alertController.addAction(actionOk)
+        alertController.addAction(actionCancel)
         self.present(alertController, animated: true, completion: nil)
         }
     }
